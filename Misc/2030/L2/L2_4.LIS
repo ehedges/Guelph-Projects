@@ -1,0 +1,22 @@
+
+Source file: L2_4.X68
+Assembled on: 15-10-06 at: 18:16:54
+          by: X68K PC-2.2 Copyright (c) University of Teesside 1989,96
+Defaults: ORG $0/FORMAT/OPT A,BRL,CEX,CL,FRL,MC,MD,NOMEX,NOPCO
+
+    1                        *-----------------------------------------------------------
+    2                        * Title      :
+    3                        * Written by :
+    4                        * Date       :
+    5                        * Description:
+    6                        *-----------------------------------------------------------
+    7  00008000                        ORG       $8000
+    8  00008000 103C0077     PROGRAM:  MOVE.B    #$77,D0
+    9  00008004 5600                   ADD.B     #3,D0
+   10  00008006 06000009               ADD.B     #9,D0
+   11  0000800A 5300                   SUB.B     #1,D0
+   12  0000800C 5900                   SUB.B     #4,D0
+   13  0000800E 4E4E                   TRAP      #14
+   14           00008000               END       PROGRAM
+
+Lines: 14, Errors: 0, Warnings: 0.

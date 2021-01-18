@@ -1,0 +1,59 @@
+Create Die
+
+	Sides: Negative, Positive, small large,
+	Colour: test with all colors, test with an incorrect color
+
+
+Create Coin Denomination, test with all
+
+Randomizer
+
+	randomize():Negative, Positive, small large,
+	result():Negative, Positive, small large,
+	reset():Negative, Positive, small large,
+
+Coint:
+	denomination():test all denomoinations
+	flip(): Negative, positive small, postiive large
+Die:
+	color(): all colors
+	sides(): Negative, Positive, small large,
+	roll(): Negative, Positive, small large,
+	sidesup(): Negative, Positive, small large, NIL
+
+RandomizerCollection:
+	store() add to empty, add to not empty, add coin, add dice, add 2 copins, add 2 dice, add one and one
+	add() copy empty, copy single coin/die, copy multiple
+	add() add to empty, add to not empty, add coin, add dice, add 2 copins, add 2 dice, add one and one
+	empty() empty empty, empty single, empty multiple
+
+Bag:
+	select() ampty, select die, select coin, select multiple die, select multiple coins, select both multiple
+	empty() empty, full, one, and one,
+
+Clutch:
+	next() empty, coin, die
+	empty() returns NIL
+
+Cup:
+	throw() empty, roll one coin, roll one die, roll many
+	load((c"Clutch); coin, die, many
+	empty(); empty, one, many
+Throw
+
+	return() empty, one die, one coin, many
+	tally() empty, one, many
+	sum() empty, one coin, one die, many die one coinb, many coin, one die, many
+	report() no previous, previous
+Player
+
+	name() 
+	store()
+	add()
+	load()
+	throw()
+	clear()
+	tally()
+	sum()
+	report()
+

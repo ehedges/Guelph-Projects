@@ -1,0 +1,162 @@
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
+with Ada.Strings.Unbounded.Text_IO; use Ada.Strings.Unbounded.Text_IO;
+with integer_linkedlist; use integer_linkedlist;
+
+procedure unBound is
+
+    numberInput : unbounded_string;
+
+    operandOne: linkedListHead;
+    operandTwo: linkedListHead;
+    answer : linkedListHead;
+
+    tempNum : integer;
+    inputChar : character;
+
+--Takes the character, turns into a string. 
+
+    procedure convertInput(inputValue : in unbounded_string; list : in out linkedListHead) is
+    begin
+    
+           for i in 1..length(inputValue) loop
+
+                
+                if(element(inputValue,i) = '-') then
+
+                    makeNeg(list);
+
+                elsif((element(inputValue,i) = '+')) then    
+
+                    makePos(list);
+
+                else 
+
+                    tempNum := integer'Value ((1 => element(inputValue,i)));
+                    insertBack(tempNum,list);
+
+                end if;
+
+           end loop;          
+
+    end convertInput;
+
+begin
+
+-- the menu.
+    loop
+
+        clearList(operandOne);
+        clearList(operandTwo);
+        clearList(answer);
+
+        put_line("Enter an operation: + , - , * or !. Enter Q to quit.");
+
+        get(inputChar);
+
+        get_line(numberInput);
+
+--Exits and ends
+        if (inputChar = 'Q') then
+
+            exit;
+--Adds
+        elsif (inputChar = '+') then
+        
+           put_line("Adding two numbers. Please Enter your first operand:");
+           get_line(numberInput);
+
+           convertInput(numberInput,operandOne);
+
+           put_line("Please Enter your second operand:");
+           get_line(numberInput);
+
+           convertInput(numberInput,operandTwo);
+
+           put_line("The Equation is:");
+           displayList(operandOne);
+           put_line(" ");
+           put_line(" + ");
+           displayList(operandTwo);
+           put_line(" ");
+           put_line("Calculating...");
+           addNums(operandOne,operandTwo,answer);           
+           put_line("The Answer is");
+           displayList(answer);
+
+--subtracts
+        elsif (inputChar = '-') then
+
+           put_line("Subtracting two numbers. Please Enter your first operand:");
+           get_line(numberInput);
+
+           convertInput(numberInput,operandOne);
+
+           put_line("Please Enter your second operand:");
+           get_line(numberInput);
+
+           convertInput(numberInput,operandTwo);
+
+           put_line("The Equation is:");
+           displayList(operandOne);
+           put_line(" ");
+           put_line(" - ");
+           displayList(operandTwo);
+           put_line(" ");
+           put_line("Calculating...");
+           subNums(operandOne,operandTwo,answer); 
+           put_line("The Answer is");
+           displayList(answer);
+
+--Multiply
+        elsif (inputChar = '*') then
+
+           put_line("Multiplying two numbers. Please Enter your first operand:");
+           get_line(numberInput);
+
+           convertInput(numberInput,operandOne);
+
+           put_line("Please Enter your second operand:");
+           get_line(numberInput);
+
+           convertInput(numberInput,operandTwo);
+
+           put_line("The Equation is:");
+           displayList(operandOne);
+           put_line(" ");
+           put_line(" * ");
+           displayList(operandTwo);
+           put_line(" ");
+           put_line("Calculating...");
+           multiNums(operandOne,operandTwo,answer); 
+           put_line("The Answer is");
+           displayList(answer);
+
+-- Factorial
+        elsif (inputChar = '!') then
+
+           put_line("Calculating factorial. Please Enter a number:");
+           get_line(numberInput);
+           convertInput(numberInput,operandOne);
+           put_line(" ");
+           put_line("Calculating...");
+           factorialNum(operandOne,answer);
+
+           if getLength(answer) > 0 then
+
+               put_line("The Answer is");
+               displayList(answer);
+
+           end if;
+
+        else
+
+           put_line("Error with input.");
+
+        end if;
+
+        put_line("");
+
+    end loop;
+
+end unBound;

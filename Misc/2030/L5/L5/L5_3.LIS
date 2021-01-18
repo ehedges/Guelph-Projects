@@ -1,0 +1,26 @@
+
+Source file: L5_3.X68
+Assembled on: 15-10-20 at: 17:24:09
+          by: X68K PC-2.2 Copyright (c) University of Teesside 1989,96
+Defaults: ORG $0/FORMAT/OPT A,BRL,CEX,CL,FRL,MC,MD,NOMEX,NOPCO
+
+    1                        *L5_3.x68 example of program with assemble-time expression
+    2                        
+    3  00008000                        ORG       $8000
+    4                        
+    5  00008000 103900009001 START:    MOVE.B    $9001,D0              ;;numeric memory address
+    6  00008006 103900009001           MOVE.B    VAR1+1,D0             ;;assemble-time expression
+    7  0000800C 103900009001           MOVE.B    VAR2,D0               ;;label
+    8  00008012 4E4E                   TRAP      #14
+    9                         
+   10                                
+   11                         
+   12  00009000                        ORG       $9000
+   13  00009000 01           VAR1:     DC.B      $01
+   14  00009001 02           VAR2:     DC.B      $02
+   15  00009002 03           VAR3:     DC.B      $03
+   16  00009003 04           VAR4:     DC.B      $04
+   17                         
+   18           00008000               END       START
+
+Lines: 18, Errors: 0, Warnings: 0.

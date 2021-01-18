@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>vCard Viewer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CHANGE ME">
+    <meta name="keywords" content="CHANGE ME">
+    <meta name="author" content="CHANGE ME">
+    <!-- Load jquery, bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <!-- Custom CSS End -->
+</head>
+<body>
+
+    <!--The Status Panel-->
+    <div class="panel panel-default" id = "StatusPanel">
+        <div class="panel-heading" id = "StatusPanelHeading">Status Panel</div>
+        <div class="panel-body" id = "StatusBody">
+            <button type="button" id="clearButton" >Clear</button>
+            <ul id = "Status List">
+            </ul>
+        </div>
+    </div>
+
+    <!--The Card Table-->
+    <div class="panel panel-default" id = "CardTablePanel">
+        <div class="panel-heading" id = "CardTableHeading">Card View Panel</div>
+        <div class="panel-body" id = "CardTableBody">
+            <table id = "CardTable">
+                  <tr>
+                    <th>Property Number</th>
+                    <th>Property Group</th>
+                    <th>Property Name</th> 
+                    <th>Property Values</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td> </td> 
+                    <td>FN</td>
+                    <td>John Doe</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Group</td> 
+                    <td>FN</td> 
+                    <td>John Smith</td>
+                  </tr>
+            </table>
+        </div>
+        <button type="button" id="downloadButton">Download</button>
+    </div>
+
+    <!--Drop menu for FIle Table-->
+    <div class="panel panel-default" id = "FileTablePanel">
+        <div class="panel-heading"> File Log Panel</div>
+        <div class="panel-body">  
+            <form class = "table" id = "fileTable" >
+              <select name="cars" size="yourSpecificValue">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+            </form>
+            <table id = "FileTable">
+                <tr>
+                    <th>Card Name</th>
+                    <th>Individual Name</th> 
+                    <th>Number of Properties</th>
+                </tr>
+                <tr>
+                    <td>dummyCard1</td>
+                    <td>Smith</td> 
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>dummyCard1</td>
+                    <td>Jackson</td> 
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>     
+     <button type="button" id="uploadButton">Upload</button>
+     <input type="text" name="File Name" value="Mickey" id = "uploadTextField">
+    </div>
+    <!-- Leave me at the bottom of body -->
+	<!-- Dennis had a / here before, removed at it started working-->
+    <script src="index.js"></script>
+    <div id="blah"></div>
+</body>
+</html>
+
+
+
+
+
+
+

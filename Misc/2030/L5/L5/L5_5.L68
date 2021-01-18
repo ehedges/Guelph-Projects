@@ -1,0 +1,37 @@
+00008000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.15.02
+Created On: 10/20/2015 8:24:24 PM
+
+00000000                             1  *-----------------------------------------------------------
+00000000                             2  * Title      :Lab 5 program
+00000000                             3  * Written by :Evan Hedges
+00000000                             4  * Date       :October 20th
+00000000                             5  * Description:Lab assignment
+00000000                             6  *-----------------------------------------------------------
+00008000                             7      ORG $8000
+00008000                             8  START: 
+00008000                             9  
+00008000  1039 00009000             10      MOVE.B X,D0
+00008006  1239 00009001             11      MOVE.B X+1,D1
+0000800C  C2FC 0003                 12      MULU #3,D1
+00008010  C0FC 0002                 13      MULU #2,D0
+00008014  D001                      14      ADD.B D1,D0
+00008016  13C0 00009002             15      MOVE.B D0,X+2
+0000801C                            16  
+0000801C  4E4E                      17      TRAP #14
+0000801E                            18      
+00009000                            19      ORG    $9000
+00009000= 01                        20  X   DC.B 1
+00009001= 01                        21      DC.B 1
+00009002                            22      DS.B 1
+00009003                            23      END    START
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+START               8000
+X                   9000

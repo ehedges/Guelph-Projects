@@ -1,0 +1,34 @@
+    Name : Evan Hedges 
+	ID: 0898140
+	Date: September 26th
+	Assignment: 1
+
+Compile:
+
+Navigate to the location of the folder type "make". 
+
+Running the program:
+
+Type ./output, you will enter a menu. Type A for part A (print carbon's permutations), Type B for part B (Ackermann's Function), Type C for  part C (Newton's Division) and Q for quitting. 
+
+
+Answers: 
+
+
+References:
+
+Used pseudocode of Heap's Algorithm from: http://desple.com/post/118425815657/permutations-with-heaps-algorithm-in-javascript
+
+Limitations: 
+
+A: Need to delete carbon.txt before running, otherwise it may add the output to the file again. 
+
+
+
+B:
+
+Ackermann's Function segfaults if too big. 
+
+C:
+
+Infinite loops on negative values. May crash if it fails to get time.

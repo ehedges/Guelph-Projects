@@ -1,0 +1,8 @@
+Evan Hedges, 0898140
+4150: Software Reliability and Testing
+
+Compile: chmod +x Lab1.sh
+
+Executing: ./Lab1.sh ARGS
+
+Limitations: None, does the requirements for the lab. Uses the sh interpretor. 

@@ -1,0 +1,6 @@
+from putty put address as
+ehedges@portkey.socs.uoguelph.ca
+
+then once logged into portkey, type:
+ssh ehedges@longbottom.socs.uoguelph.ca
+

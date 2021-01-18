@@ -1,0 +1,36 @@
+00008000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.15.02
+Created On: 10/20/2015 7:15:19 PM
+
+00000000                             1  *L5_3.x68 example of program with assemble-time expression
+00000000                             2  
+00008000                             3          ORG     $8000
+00008000                             4  
+00008000  1039 00009001              5  START   MOVE.B  $9001,D0    ;numeric memory address
+00008006  1039 00009001              6          MOVE.B VAR3-1,D0    ;assemble-time expression
+Line 7 ERROR: Immediate data exceeds 8 bits
+0000800C  103C 0001                  7          MOVE.B   #VAR2,D0    ;label
+00008010  4E4E                       8          TRAP  #14     
+00008012                             9      
+00008012                            10          
+00008012                            11      
+00009000                            12          ORG $9000   
+00009000= 01                        13  VAR1    DC.B    $01 
+00009001= 02                        14  VAR2    DC.B    $02 
+00009002= 03                        15  VAR3    DC.B    $03 
+00009003= 04                        16  VAR4    DC.B    $04 
+00009004                            17      
+00009004                            18          END START   
+
+1 error detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+START               8000
+VAR1                9000
+VAR2                9001
+VAR3                9002
+VAR4                9003

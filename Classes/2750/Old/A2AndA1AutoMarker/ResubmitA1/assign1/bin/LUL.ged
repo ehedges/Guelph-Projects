@@ -1,0 +1,32 @@
+0 Head
+1 SOUR Personal Ancestral File
+2 NAME Personal Ancestral File
+1 GEDC
+2 FORM LINEAGE-LINKED
+2 VERS 5.500000
+1 CHAR ANSEL
+1 SUBM @SUB1@
+0 @SUB1@ SUBM
+1 NAME Submitter
+1 ADDR 149 Kimrose Lane
+0 @I1@ INDI
+1 NAME John /Smith/
+1 SEX M
+1 EVEN
+2 TYPE ASDF
+2 DATE 2017/123/54
+2 PLAC LULLU
+1 FAMS @FAM1@
+0 @I2@ INDI
+1 NAME Elizabeth /Stansfield/
+1 SEX F
+1 FAMS @FAM1@
+0 @I3@ INDI
+1 NAME James /Smith/
+1 SEX M
+1 FAMS @FAM1@
+0 @FAM1@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 CHIL @I3@
+0 TRLR

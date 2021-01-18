@@ -1,0 +1,17 @@
+Evan Hedges, 0898140
+CIS 2750, W18
+Denis Nikitenko
+
+Compile: Type make or make all. I used make test to create executable test to test.
+
+Limitations:
+
+write works, but may fail due to weird things with test harness
+
+The ancestors/descendants sometimes have extra [] for black stuff.
+Delete will crash the generation lists will crash the program.
+
+the String related stuff works. 
+
+Misc:
+Used Denis's linked list provided. No changes were made to it.

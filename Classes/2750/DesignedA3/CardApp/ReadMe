@@ -1,0 +1,13 @@
+Evan Hedges 0898140
+CIS 2750 F18
+
+Everything should be implemented.No extra libraries so npm install should work. Tested on the school servers. Use Make,make all or make dynamic in the parser directory to compile (gcc -shared -o ../VCardlib.so $(LL) $(VCARD) $(VUTIL)
+is how it is compiled).
+
+Limitations:
+
+Server sometimes crashes. Does not display the error message if uploading an invalid file.
+
+Misc:
+
+All functions should be implemented and working. I include the dates (Birthday and Anniversary) in the optional properties count (this was never specified). 

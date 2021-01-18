@@ -1,0 +1,28 @@
+00008000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.15.02
+Created On: 10/20/2015 6:41:11 PM
+
+00000000                             1  *L5_2 sample program
+00000000                             2  
+00000000  =00008000                  3  CODE    EQU $8000
+00000000  =00009000                  4  DATA    EQU $9000
+00000000                             5      
+00008000                             6          ORG CODE
+00008000  3039 00009000              7  START   MOVE.W  $9000,D0
+00008006  C0FC 0007                  8          MULU    #7,D0
+0000800A  80FC 0003                  9          DIVU    #3,D0
+0000800E  D079 00009004             10          ADD.W   $9004,D0
+00008014  33C0 00009002             11          MOVE.W  D0,$9002
+0000801A  4E4E                      12          TRAP    #14
+0000801C                            13          END CODE
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+CODE                8000
+DATA                9000
+START               8000

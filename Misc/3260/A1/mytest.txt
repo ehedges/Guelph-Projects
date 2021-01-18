@@ -1,0 +1,307 @@
+Output:
+
+Create die's purpose is to make a valid die object. Returns valid object, this is worked upon later. PASS
+Return details returns the attributes, ensuring teh creation was correct. Returns the attributes that match creation. PASS
+Randomizing rolls the die to test if it can be randomized. Retursn a random number between 1 and side. PASS
+Randomizing againt to ensure subsequent rolls can be rolled over.  A random number between 1 and sides. PASS
+Reset die to test if it can be blank again. Sideup returns nothing. PASS
+Create coin to test if a valid coin can eb created. Returns a valid coin object. PASS
+Denomination to check atrributes, should make creation. PASS
+Flip to test if it can be flipped and return a head. Either Heads or Tails. PASS
+Note: since most collections in herit method, the abstract is tested rather than test. PASS
+individual for all of the randomzier collection function. PASS
+Test create randomizer to test if one can be created. This acted upon later. PASS
+Test store to see if multiple coins and die can be stored in the same. Should increase length. PASS
+Test add for both collection and multiple objects. Should increase by length of collection or number of objects. PASS
+TEst empty, should make collection length 0. PASS
+Test making clutch. PASS. TEst if you can create a Clutch. Test storing into Clutch. Important to know if it can store stuff. PASS. 
+Test Empty clutch. TEsting if teh Clutch can be emptied. Clutch length should be 0. PASS  
+TEst Bag creation. TEst if a bag can be created. SHould return a bag. PASS. 
+Test bag Select all die from Bag. Purpose is to test :all and selecting object type. Return a clutch of all valid die. PASS.
+Test bag Select all coin Bag. Ensure both object tpyes can be selected. Return all coins in bag. PASS.
+Test bag Select all coin with heads from Bag. Ensure that attributes can be selected from. Returns clutch of all heads from bag.  PASS.
+Test bag Select all quarter from Bag. Ensure that all coin attributes can be selected from. PASS.
+Test bag select 6 sided die Bag. Ensure die attributes can be selected from. PASS.
+Test bag select red die Bag. Ensure that colour can be selected from. PASS.
+Test bag select 4 sided yellow die with 4 up Bag. Ensure multiple attributes can be combine to be selected from.PASS.
+Test bag select via number. Ensure that select can up to an amount. PASS.
+Test bag select more than there is in array (10). Ensure that the code does not break if there is not enough objects PASS.
+Test bag select negative. Can't have a negative coin, test it won't return anythiong. PASS.
+Test bag select zero. Want nothing, therefore should return nothing. PASS.
+Test bag Empty Bag. Wants an empty bag. Return nothing. PASS.
+Test Create Throw. Test that a throw can be created. Return a throw. PASS.
+Test Tally. Test that you can tally based upon a hash. Returns number that is equal to the hash. PASS.
+Test sum. Test the total score of the throw. Can be random. PASS.
+Test Report. Returns last thing. Should match sum. PASS.
+Test Tally with empty thorw. Ensure does not break when there is nothing. Return 0. PASS.
+Test Sum with empty throw.Ensure does not break when there is nothing. Return 0. PASS.
+Test Report with empty throw.Ensure does not break when there is nothing. Returns 0. PASS.
+Test create Cup. Test to see if a cup can be create. Returns a cup class. PASS.
+Test Load Cup that is empty. Test to see if stuff can be stored. Shjould return nothing. PASS.
+Test Throw Cup, tally then sum. Test to see if tally returns number of object. Returns a tally of the searched objects. PASS.
+Test Empty Cup, value is clutch length. Test to see if empty cup returns a clutch. Returns a clutch. PASS.
+Test Empty Cup and Throw (Displays tally of coin and die). Returns a throw with random values. PASS.
+Test Empty an empty Cup. Test to see if empty breaks when empty. Should return nothing PASS.
+Test Player.
+Test Create Player. Test if a player can be created. REturns a player class. PASS.
+Test Name Player. See if it returns player name. Should return the Player name. This Example of Bob. PASS.
+Test Store Player. See if an object can be stored. Should return nothing. PASS.
+Test Add Player. See if a collection can be added. Should return nothing. PASS.
+Test Load Player. See if the Player can load the cup. Should return nothing.  PASS.
+Test Throw Player. See if the player can throw the cup. Should throw and randomize the cup, return nothing. PASS.
+Test clear Player. see if teh player can clear the stored data. Should remove all the data, return nothing. PASS.
+Test Sum Player. See if the score can be found. Should return a score, can be random. PASS.
+Test Tally Player. See if teh tally can be found. Should return the number of that hash. PASS.
+Test Report Player. See if the last report can be returned. Should match tally. PASS.
+Test Load empty Player. See if the cup will break when loaded with nothing. Should return nothing. PASS.
+Test Throw  emptyPlayer. See if throw breaks when the empty cup is thrown. Should return n empty throw. PASS.
+Test clear empty Player. See if breaks when clear is called on empty. Should not  SHould  PASS.
+Test Sum empty Player.. See if sum breaks on empty. Should return 0, should not break. PASS.
+Test Tally empty Player. See if tally breaks on empty. Should return 0, should not break. PASS.
+Test Report empty Player. See if ewmpty breaks on empty. Should return nothing PASS. 
+
+
+Test Suite 1: Die
+Test 1: Creating a die with 3 sides
+Test Passed, die created.
+Test 2: Return details about the unrolled die(Sides then colour then rolled)
+Sides:
+3
+Colour:
+green
+Sideup:
+
+Test 3: Randomizing the Die, display all data to ensure integrity
+Sides:
+3
+Colour:
+green
+Randomizations:
+1
+Sideup:
+1
+Test 4: Randomizing the same Die again(Sides then colour then rolled)
+Sides:
+3
+Colour:
+green
+Randomizations:
+2
+Sideup:
+1
+Test 5: Reset Die
+
+Rolling once:
+1
+Test Suite 2: Coin
+Test 1: Creating a coin
+Test 2: Flip a coin
+1
+H
+1
+Test Suite 3: Randomizer_Collection
+Test 1: Create Collection
+Test 2: Store a coin to an empty Collection
+Collection Length:
+0
+Collection Length:
+1
+Test 3: Store a die to an empty Collection
+Collection Length:
+0
+Collection Length:
+1
+Test 4: Add multiple objects (4) to Collection (1)
+Collection Length:
+1
+Collection Length:
+5
+Test 5: Add collection (5) to Collection (1)
+Collection Length:
+1
+Collection Length:
+6
+Test 6: (5) Empty
+Collection Length:
+5
+Collection Length:
+0
+Test Suite 4: Clutch
+Test 1: Create Clutch
+Test 2: Next Clutch (Storing 2 copies of die from Test 1)
+Clutch Length:
+2
+Clutch Length:
+1
+Die
+Sides:
+3
+Colour:
+green
+Randomizations:
+2
+Sideup:
+2
+Test 3: Empty 
+1
+
+0
+Test 4: Next on an empty Clutch
+Test Suite 5: Bag
+Test 1: Create Bag
+Storing a quarter, dime, toonie, a red 6 sided die, two yellow 4 sided die.
+Test 2: Select all die from Bag {item: :die}
+Number of die
+3
+Test 3: Select all coin Bag {item: :coin}
+Number of coin
+3
+Test 4: Select all coin with heads from Bag
+Number of coin
+1
+Test 5: Select all quarter from Bag
+Number of coin
+1
+Test 7: select 6 sided die Bag
+Number of die
+1
+Test 8: select red die Bag
+Number of die
+1
+Test 9: select 4 sided yellow die with 4 up Bag
+Number of die
+0
+Test 10: select via number
+Number of die
+2
+Test 11: select more than there is in array (10)
+Number of coin
+3
+Test 12: select negative
+Number of coin
+0
+Test 13: select zero
+Number of coin
+0
+Test 14: Empty Bag
+Test Suite 6: Throw
+Test 1: Create Throw
+Test 2: Create Tally
+3
+Test 3: Create sum
+1
+Test 4: Report
+1
+Test 5: Tally with empty thorw
+0
+Test 6: Sum with empty throw
+0
+Test 7: Report with empty throw
+0
+Test Suite 7: Cup
+Test 1: Create Cup
+Test 2: Load Cup that is empty
+Test 3: Load Cup that is not empty
+Test 4: Throw Cup, tally then sum
+6
+6
+Test 5: Empty Cup, value is clutch length
+5
+Test 6: Empty Cup and Throw (Displays tally of coin and die)
+0
+0
+Test 7: Empty Cup and empty
+0
+0
+0
+Test Suite 8: Player
+Test 1: Create Player
+Test 2: Name Player
+Bob
+Test 3: Store Player
+Test 4: Add Player
+Test 5: Load Player
+Test 6: Throw Player
+Test 7: clear Player
+Test 8: Sum Player
+1
+Test 9: Tally Player
+1
+Test 10: Report Player
+1
+Test 11: Load empty Player
+Test 12: Throw  emptyPlayer
+Test 13: clear empty Player
+Test 14: Sum empty Player
+0
+Test 15: Tally empty Player
+0
+Test 16: Report empty Player
+0
+
+Inital test creation Document:
+
+Create Die
+
+	Sides: Negative, Positive, small large,
+	Colour: test with all colors, test with an incorrect color
+ 
+
+Create Coin Denomination, test with all
+
+Randomizer
+
+	randomize():Negative, Positive, small large,
+	result():Negative, Positive, small large,
+	reset():Negative, Positive, small large,
+
+Coin:
+	denomination():test all denomoinations
+	flip(): Negative, positive small, postiive large
+Die:
+	color(): all colors
+	sides(): Negative, Positive, small large,
+	roll(): Negative, Positive, small large,
+	sidesup(): Negative, Positive, small large, NIL
+
+RandomizerCollection:
+	store() add to empty, add to not empty, add coin, add dice, add 2 copins, add 2 dice, add one and one
+	add() add empty, add single coin/die, add multiple
+	add() add to empty, add to not empty, add coin, add dice, add 2 coins, add 2 dice, add one and one
+	empty() empty empty, empty single, empty multiple
+
+Bag:
+	select() empty, select die, select coin, select multiple die, select multiple coins, select both multiple
+	empty() empty, full, one, and one,
+
+Clutch:
+	next() empty, coin, die
+	empty() returns NIL
+
+Cup:
+	throw() empty, roll one coin, roll one die, roll many
+	load((c"Clutch); coin, die, many
+	empty(); empty, one, many
+Throw
+
+	return() empty, one die, one coin, many
+	tally() empty, one, many
+	sum() empty, one coin, one die, many die one coinb, many coin, one die, many
+	report() no previous, previous
+Player
+
+	name() returns name
+	store() stores the item
+	add() adds both types.
+	load() loads from bag into cup
+	throw() throws and replaces
+	clear() clears all throws
+	tally() returns proper hash
+	sum() returns proper hash
+	report() returns last value
+
+Misc:
+Ensure values are maintained in coin/die while moving them from clutch to cup etc. 
+
+Watch for for coin denomination symbols
+

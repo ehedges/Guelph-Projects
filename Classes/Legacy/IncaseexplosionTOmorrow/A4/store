@@ -1,0 +1,35 @@
+    procedure displayList(list: in out linkedL istHead) is
+    begin
+    
+        tempNode := linkedListHead.head;
+        
+        loop
+
+            put(tempNode.data);
+
+            tempNode := tempNode.next;
+
+            if tempNode = NULL then
+
+                exit;
+
+            end if;
+
+        end loop;
+
+    end displayList;
+
+    procedure clearList(list: in out linkedListHead) is
+    begin
+
+        linkedListHead.length := 0;
+     
+        linkedListHead.isPositive := true;
+
+        linkedListHead.head := NULL;
+        linkedListHead.tail := NULL;
+
+    end clearList;
+
+    procedure displayList(list: in out linkedListHead);
+    procedure clearList(list: in out linkedListHead);

@@ -1,0 +1,37 @@
+V "GNAT Lib v6"
+A -gnatwa
+A -Wall
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DEFAULT_INITIALIZATION
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U stack%b		stack.adb		b5e591c8 OO PK IL
+
+U stack%s		stack.ads		9fb415cb EE NE OO PK IL
+
+D stack.ads		20190209214904 9fb415cb stack%s
+D stack.adb		20190210023241 2a518403 stack%b
+D system.ads		20151123113124 6326c08a system%s
+X 1 stack.ads
+1K9*stack 9l5 9e10 2|2b14 63l5 63t10
+3U15*push 3>20 2|13b15 21l9 21t13
+3e20 x{character} 2|13b20 18r28
+4U15*pop 4<20 2|23b15 32l9 32t12
+4e20 x{character} 2|23b20 28m13
+5V14*stack_is_empty{boolean} 2|34b14 39l9 39t23
+6V14*stack_top{character} 2|41b14 54l9 54t18
+7U15*reset_stack 2|56b15 61l9 61t20
+X 2 stack.adb
+4A10 list(character)<integer> 7r12
+5R10 char_stack 9e15 11r10
+7a5*item{4A10} 18m12 28r21 50r19
+8i5*top{natural} 16r15 17m12 17r22 18r20 26r15 28r29 29m16 29r26 37r19 44r11
+. 50r27 59m12
+11r5 st{5R10} 16r12 17m9 17r19 18m9 18r17 26r12 28r18 28r26 29m13 29r23 37r16
+. 44r8 50r16 50r24 59m9
+

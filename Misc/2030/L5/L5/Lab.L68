@@ -1,0 +1,44 @@
+00008000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.15.02
+Created On: 10/20/2015 7:52:33 PM
+
+00000000                             1  *-----------------------------------------------------------
+00000000                             2  * Title      :Lab 5 program
+00000000                             3  * Written by :Evan Hedges
+00000000                             4  * Date       :October 20th
+00000000                             5  * Description:Lab assignment
+00000000                             6  *-----------------------------------------------------------
+00001000                             7      ORG    $1000
+00001000                             8       
+00008000                             9  START: ORG $8000
+00008000                            10  
+00008000  1039 00009000             11      MOVE.B X,D0
+00008006  1239 00009001             12      MOVE.B Y,D1
+0000800C  C2FC 0003                 13      MULU #3,D1
+00008010  C0FC 0002                 14      MULU #2,D0
+00008014  D001                      15      ADD.B D1,D0
+00008016  13C0 00009002             16      MOVE.b D0,Z
+0000801C                            17  * Put program code here
+0000801C                            18  
+0000801C  FFFF FFFF                 19      SIMHALT             ; halt simulator
+00008020                            20  
+00008020                            21  * Put variables and constants here
+00008020  4E4E                      22      TRAP #14
+00008022                            23      
+00009000                            24      ORG    $9000
+00009000= 01                        25  X   DC.B 1
+00009001= 01                        26  Y   DC.B 1
+00009002                            27  Z   DS.B 1
+00009003                            28      END    START        ; last line of source
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+START               8000
+X                   9000
+Y                   9001
+Z                   9002

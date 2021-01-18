@@ -1,0 +1,89 @@
+Evan Hedges 0898140
+CIS 3190 W19 Legacy
+Assignment 4.
+
+Compile: gnatmake -Wall unbound.adb
+
+Limitations:
+
+No error checking for letters when input numbers.
+
+Misc:
+
+The printing looks awful, but the number is correct.
+
+Testing done for A4 of Legacy
+
+UI:
+Enter + symbol: Correct, asks for numbers to Add
+Enter - symbol: Corerct, asks for numbers to subtract
+enter * symbol: Correct, asks for number to multiply
+Etner ! symbol: Correct asks for number to calculate
+Enter Q symbol: Correct, exits program.
+Enter other symbol: Correcct, says erro with inout
+Enter no symbol: Does nothing
+
+Number input:
+Enter a number without a sign is positive, does not show as negative.
+Enter a number with a - for negaitve, displays a negative sign.
+Enter a number with a + for positive, does not dsplay a negative nor + sign.
+
+Addition:
+Add two single digit numbers, 1+1 works, 9+9 works. 4+6 works.
+Add two double digit numbers, 99+99 works, 12+32 works. 10+10 works.56+56.
+Add two many digit numbers, works
+
+Add a single digit number to a multi digit number, works.
+Add a multi digit number to a single digit number, works
+Add a positive to a negative,works
+Add a negative to a positive,works
+Add two positive numbers, works
+Add two negative numbers, works
+
+Add two single digits so that a single carry over occurs, works
+Add two double digits so that a single carry over occurs, works
+Add a two values so that 2 carry overs occur, can't find.
+Add a value so that multiple carryovers occur, can'tfind. 
+
+Subtraction:
+Subtract two single digit numbers, 1-1 works, 2-1 works,9-2 works
+Subtract two double digit numbers,99-56 works,12-11 works. 40-35 work.s
+Subtract a double digit numbers from a single,5-10 works,9-12344 works.
+Subtract two many digit numbers, Works.
+Subtract two of the same, works for single and large.
+
+Subtract two positive numbers, works
+Subtract two negative numbers, -1-(-1) works,-10-(-10) works, two large subtraction works..
+
+Subtract a single digit number from a multi digit number, 96-7 works,12-3 works, 40-5 works.
+Subtract a multi digit number from a single digit number. 9-12344 works.
+Subtract a positive to a negative, works
+Subtract a negative to a positive, works
+
+Subtract to create a single negative value,works
+Subtract to create a multie negative value,works
+subtract to create a large negative value,works
+
+Multiply:
+
+Multiply by 0, Works
+Multiply two single digit numbers,1*1,2*2,9*9,,7*6 works.
+Multiply two double digit numbers,10* 10 works,11*11 works,99*99 works,34*76 works.
+
+Multiply two many digit numbers, WOrks
+Multiply two positive numbers, works
+Multiply two negative numbers, works
+Multiply a single digit number to a multi digit number
+Multiply a multi digit number to a single digit number
+
+Multiply a positive to a negative,works
+Multiply a negative to a positive,works
+
+Factorial:
+Test 1! Works
+Test 2! Works
+Test 3! Works
+Test 6! Works
+Test 9! Works
+Test 10! Works
+Test 42! Works

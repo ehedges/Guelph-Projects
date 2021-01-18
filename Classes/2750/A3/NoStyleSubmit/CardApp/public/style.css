@@ -1,0 +1,90 @@
+#StatusPanel {
+
+	width: 100%;
+
+}
+
+#StatusPanelHeading {
+
+	width: 100%;
+
+}
+
+#StatusBody {
+
+	width: 100%;
+	height: 100px;
+	
+	overflow: auto;
+
+}
+
+#Status List {
+
+	width: 100%;
+	height: 100px;
+ 	overflow-y: auto;
+	
+
+}
+
+
+#clearButton {
+
+}
+
+
+#CardTablePanel {
+
+
+}
+
+#CardTableHeading {
+
+
+}
+#CardTableBody {
+
+
+	height: 100px;
+	overflow: auto;
+
+}
+
+#CardTable {
+
+	width: 1000px;
+	height: 50px;
+	overflow: auto;
+
+}
+
+#FileTablePanel {
+
+
+}
+
+#FileTableBody {
+
+	width: 100%;
+	height: 120px;
+ 	overflow-y: auto;
+
+} 
+ 
+#FileTableList {
+
+	width: 100%;
+	height: 100px;
+ 	overflow-y: auto;
+
+
+}
+
+#FileTable{ 
+
+	width: 100%;
+	height: 100px;
+ 	overflow-y: auto;
+
+}

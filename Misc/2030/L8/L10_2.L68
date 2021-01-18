@@ -1,0 +1,58 @@
+00008000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.15.02
+Created On: 11/24/2015 7:58:33 PM
+
+00000000                             1  *-----------------------------------------------------------
+00000000                             2  * Title      :
+00000000                             3  * Written by :
+00000000                             4  * Date       :
+00000000                             5  * Description:
+00000000                             6  *-----------------------------------------------------------
+00008000                             7      ORG    $8000
+00008000                             8  START:
+00008000                             9  
+00008000  4FF9 00009000             10      LEA $9000,SP
+00008006  4282                      11      CLR.L   D2
+00008008  243C 000004D2             12      MOVE.L  #1234,D2
+0000800E  2F02                      13      MOVE.L  D2,-(SP) 
+00008010  4EB9 0000801A             14      JSR     REC
+00008016  6000 003E                 15      BRA EXIT
+0000801A                            16  
+0000801A                            17  REC
+0000801A  4E56 FFFC                 18      LINK A6,#-4
+0000801E  4281                      19      CLR.L   D1
+00008020  322E 000A                 20      MOVE.W 10(A6),D1
+00008024  0C41 0000                 21      CMPI #0,D1
+00008028  6700 0016                 22      BEQ RETURN
+0000802C                            23  
+0000802C  82FC 000A                 24      DIVU.W #10,D1
+00008030  3D41 FFFE                 25      MOVE.W D1,-2(A6)
+00008034  4841                      26      SWAP D1
+00008036  3D41 FFFC                 27      MOVE.W D1,-4(A6) 
+0000803A  4EB9 0000801A             28      JSR REC
+00008040                            29      
+00008040                            30  RETURN 
+00008040  322E 0008                 31      MOVE.W 8(A6),D1
+00008044  303C 0003                 32      MOVE.W #3,D0
+00008048  0C41 0000                 33      CMPI #0,D1
+0000804C  6700 0008                 34      BEQ EXIT
+00008050  4E4F                      35      TRAP #15
+00008052  4E5E                      36      UNLK A6    
+00008054  4E75                      37      RTS
+00008056                            38      
+00008056                            39  EXIT    
+00008056  4E5E                      40          UNLK A6
+00008058  4E4E                      41          TRAP    #14
+0000805A                            42          END     START
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+EXIT                8056
+REC                 801A
+RETURN              8040
+START               8000

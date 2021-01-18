@@ -1,0 +1,42 @@
+00009500 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.15.02
+Created On: 11/10/2015 6:36:08 PM
+
+00000000                             1  *-----------------------------------------------------------
+00000000                             2  * Title      :
+00000000                             3  * Written by :
+00000000                             4  * Date       :
+00000000                             5  * Description:
+00000000                             6  *-----------------------------------------------------------
+00009000                             7              ORG         $9000
+00009000= 00000000                   8  RESULT      DC.L        0
+00009004                             9  
+00009500                            10              ORG         $9500
+00009500                            11  START            
+00009500  203C 12345678             12              MOVE.L      #$12345678,D0
+00009506  223C 9ABCDEF0             13              MOVE.L      #$9ABCDEF0,D1
+0000950C  243C 0FEDCBA9             14              MOVE.L      #$0FEDCBA9,D2  
+00009512  027C DFFF                 15             ANDI.W  #%1101111111111111,SR
+00009516                            16   
+00009516  4FF9 00008100             17              LEA         $8100,A7                
+0000951C  4EB9 00009524             18              JSR         GENMUL
+00009522  4E4E                      19              TRAP        #14
+00009524                            20      
+00009524  2F00                      21  GENMUL      MOVE.L      D0, -(A7)
+00009526  2001                      22              MOVE.L      D1, D0
+00009528  C1C2                      23              MULS        D2,D0
+0000952A  23C0 00009000             24              MOVE.L      D0,RESULT
+00009530  201F                      25              MOVE.L      (A7)+,D0
+00009532  4E75                      26              RTS
+00009534                            27              END    START
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+GENMUL              9524
+RESULT              9000
+START               9500

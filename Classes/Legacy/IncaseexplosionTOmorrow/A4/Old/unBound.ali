@@ -1,0 +1,100 @@
+V "GNAT Lib v6"
+M P W=b
+A -gnatwa
+A -Wall
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_NESTED_FINALIZATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U unbound%b		unBound.adb		9e4f9c36 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.strings.unbounded.text_io%s  a-suteio.adb	a-suteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-charac.ads		20070912115821 2d3ec45b ada.characters%s
+D a-chlat1.ads		20140225151544 66457d31 ada.characters.latin_1%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-finali.ads		20151020095656 bf4f806b ada.finalization%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-string.ads		20070406091342 90ac6797 ada.strings%s
+D a-strmap.ads		20140611123156 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20140717072738 3f91d4c5 ada.strings.unbounded%s
+D a-suteio.ads		20090409150019 26d8e9aa ada.strings.unbounded.text_io%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D system.ads		20151123113124 6326c08a system%s
+D s-atocou.ads		20151020101020 b45c2d8d system.atomic_counters%s
+D s-conca2.ads		20140225151544 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-finmas.ads		20151016130316 7811a767 system.finalization_masters%s
+D s-finroo.ads		20120426095924 4ff27390 system.finalization_root%s
+D s-memory.ads		20140225151139 597d6634 system.memory%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-secsta.ads		20140225151139 86a2856d system.secondary_stack%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stalib.adb		20140225151139 f2fe2716 system.standard_library%b
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20131010103753 b16154c2 system.storage_pools%s
+D s-stposu.ads		20151020120548 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20131014135145 aedef97e system.stream_attributes%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+D unBound.adb		20190330212629 bf6b548d unbound%b
+X 1 ada.ads
+16K9*Ada 19e8 39|1r6 1r23 2r6 2r33 3r6 3r41
+X 8 a-string.ads
+16K13*Strings 35e16 39|2r10 2r37 3r10 3r45
+X 10 a-strunb.ads
+76K21*Unbounded 489e26 39|2w18 2r45 3r18 3r53
+79R9*Unbounded_String<5|43R9> 473e14 39|8r19
+84V13*Length{natural} 39|29s24 39s24
+139V13*Element{character} 39|31s21 41s21
+X 11 a-suteio.ads
+39K31*Text_IO 61e34 39|3w28 3r63
+50U14*Get_Line 39|18s9 27s12 37s12 48s12 51s12 56s12 59s12 64s12
+X 13 a-textio.ads
+49K13*Text_IO 471e16 39|1w10 1r27
+206U14*Get 39|16s9
+242U14*Put 39|31s17 41s17
+263U14*Put_Line 39|14s9 26s12 36s12 47s12 50s12 55s12 58s12 63s12 67s12 71s9
+X 17 system.ads
+67M9*Address
+X 25 s-memory.ads
+53V13*Alloc{17|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{17|67M9} 105i<c,__gnat_realloc>22
+X 31 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 39 unBound.adb
+5U11*unBound 5b11 75l5 75t12
+7e5 inputChar{character} 16m13 20r13 24r16 45r16 53r16 61r16
+8r5 numberInput{10|79R9} 18m18 27m21 29r31 31r29 37m21 39r31 41r29 48m21
+. 51m21 56m21 59m21 64m21
+29i16 i{integer} 31r41
+39i16 i{integer} 41r41
+

@@ -1,0 +1,55 @@
+00008000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.15.02
+Created On: 11/10/2015 6:16:18 PM
+
+00000000                             1  *-----------------------------------------------------------
+00000000                             2  * Title      :
+00000000                             3  * Written by :
+00000000                             4  * Date       :
+00000000                             5  * Description:
+00000000                             6  *-----------------------------------------------------------
+00008000                             7      ORG    $8000
+00008000                             8  START:                  ; first instruction of program
+00008000                             9  
+00008000                            10  * Put program code here
+00008000                            11  
+00008000  701E                      12          MOVE.L #30,D0
+00008002  7219                      13          MOVE.L #25,D1
+00008004  7600                      14          MOVE.L #0,D3
+00008006                            15          
+00008006  0801 0000                 16  LOOP    BTST #0,D1
+0000800A  6600 0012                 17          BNE ADDING
+0000800E                            18          
+0000800E                            19          
+0000800E  0C81 00000001             20  RETURN  CMPI.L #1,D1
+00008014  6700 000C                 21          BEQ EXIT  
+00008018                            22     
+00008018  E340                      23          ASL #1,D0
+0000801A  E241                      24          ASR #1,D1
+0000801C                            25          
+0000801C  60E8                      26          BRA LOOP
+0000801E                            27          
+0000801E                            28  ADDING
+0000801E  D680                      29          ADD.L D0,D3
+00008020  60EC                      30          BRA RETURN
+00008022                            31          
+00008022  4E4E                      32  EXIT        TRAP #14
+00008024                            33      
+00008024                            34      
+00008024                            35  
+00008024                            36  * Put variables and constants here
+00008024                            37  
+00008024                            38      END    START        ; last line of source
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+ADDING              801E
+EXIT                8022
+LOOP                8006
+RETURN              800E
+START               8000

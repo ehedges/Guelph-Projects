@@ -1,0 +1,31 @@
+    Name : Evan Hedges 
+	ID: 0898140
+	Date: September 7th
+	Assignment: 3
+
+Compile:
+
+Navigate to the location of the folder type "make tree" for the tree implementation and "make heap" for the heap implementation. 
+
+Running the program:
+
+Type ./a3tree EXPRESSION to use the tree. Type ./a3heap for the heap implementation. 
+
+Limitations: 
+
+Tree:
+
+1. Display: Sort of works. It prints out a rought tree shape, but without lines.
+2. Preorder: Working.
+3. Inorder: WOrking.
+4. Postorder: WOrking.
+
+5. Update : Accepts the first number, even if it is followed by letters. Can't be a number larger than the amount of unknowns. Rejects input if letter precede the number.
+
+6. Calculate: Calculates, can't divide by 0 or else it will exit. All variables are initially 0.
+7. Exit: working.
+
+Misc: Won't accept non x variables. Segfaults with invalid brackets. Max input size of 1k. Requires most embeded ( to be on the left. Basic error checking. Crashs with invalid brackets.  
+
+
+Heap: f.dat is hardcoded into the program, so it must be in the same folder. It does not check for invalid files. 

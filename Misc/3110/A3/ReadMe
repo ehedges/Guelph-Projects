@@ -1,0 +1,13 @@
+Evan Hedges, 0898140
+
+Compile:
+
+Navigate to the location of the makefile.
+
+Running:
+type make to compile and  to run. ./Dinner num num
+
+Known Limits:
+The program uses sleep to prevent the philospher from picking up the chopsticks immediately, so as the number becomes bigger, it may take awhile to finish.
+
+The second part of this assignment isn't done. 

@@ -1,0 +1,155 @@
+body {
+    background-color: CadetBlue;
+}
+
+#StatusPanel {
+
+	border: 1px solid black;
+	width: 100%;
+
+}
+
+#StatusList{
+
+	border: 1px solid black;
+	width: 100%;
+	background-color: white;
+
+}
+
+#StatusPanelHeading {
+	
+	font-size: 250%;
+	color: LightGreen;
+	text-align: center;
+	border: 1px solid black;
+	width: 100%;
+
+}
+
+#StatusBody {
+
+	width: 100%;
+	height: 100px;
+	
+	overflow: auto;
+
+}
+
+#Status List {
+
+	width: 100%;
+	height: 100px;
+ 	overflow-y: auto;
+	
+
+}
+
+
+#clearButton {
+
+}
+
+
+#CardTablePanel {
+
+	border: 1px solid black;
+	width: 100%;
+
+
+}
+
+#CardTableHeading {
+
+	color: LightGreen;
+	font-size: 220%;
+	text-align: center;
+	width: 100%;
+
+
+}
+#CardTableBody {
+
+	border: 1px solid black;
+	width: 100%;
+	height: 100px;
+	overflow: auto;
+	background-color: white;
+}
+
+#CardTable {
+
+	padding: 100%;
+	border: 1px solid black;
+	width: 100%;;
+	height: 50px;
+	overflow: auto;
+
+}
+
+#FileTablePanel {
+	
+	border: 1px solid black;
+	width: 100%;
+}
+
+#FileTableHeading {
+
+	color: LightGreen;
+	font-size: 220%;
+	text-align: center;
+	width: 100%;
+	border: 1px solid black;
+
+
+}
+
+#FileTableBody {
+
+	width: 100%;
+	height: 120px;
+ 	overflow-y: auto;
+
+} 
+ 
+#FileTableList {
+
+	width: 100%;
+	height: 100px;
+ 	overflow-y: auto;
+
+
+}
+
+#FileTable{ 
+
+	padding: 100%;
+	border: 1px solid black;
+	width: 100%;
+	height: 100px;
+ 	overflow-y: auto;
+	background-color: white;
+
+}
+
+#FileTable.th{ 
+
+	text-align: center;
+	padding: 100%;
+	border: 1px solid black;
+	width: 100%;
+	height: 100px;
+ 	overflow-y: auto;
+
+}
+
+#FileTable.td{ 
+
+	text-align: center;
+	padding: 100%;
+	border: 1px solid black;
+	width: 100%;
+	height: 100px;
+ 	overflow-y: auto;
+
+}

@@ -1,0 +1,21 @@
+Author: Evan Hedges, 0898140
+
+Referneces: http://stackoverflow.com/questions/18686114/cd-command-not-working-with-execvp
+http://stephen-brennan.com/2015/01/16/write-a-shell-in-c/
+
+Compile:
+
+Navigate to the location of the makefile. Type make clean to clear any .o files. Type make to compile the program.
+
+Running:
+Type ./CIS3110sh to compile the program. 
+Section 1: Done
+Section 2: Not Done
+Section 3: Cd works. Nothing else.
+
+Known Limits:
+You can input up to 500 characters.
+Up to 100 commands can be used.
+Directory character limit of 100.
+Can have up to 100 child process running in the background.
+

@@ -1,0 +1,11 @@
+Evan Hedges 0898140
+CIS 2750 F18
+
+Compile: Type make or make all.
+
+Limitations:
+
+Time in the Datetime struct may allow for longer than 7 characters. 
+
+Misc:
+

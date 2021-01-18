@@ -1,0 +1,8 @@
+Evan Hedges, 0898140
+Course: Parallel Programing, CIS 3090
+
+Compile: type "make", use ./a3 -g or ./a3 <#> <#> to run the program. 
+
+Notes: The time it prints out is the elapseed time, an approximation of how long a stopwatch
+woud take to time the program. It is recorded in seconds. If the matrix is too large it may
+kill the program. 

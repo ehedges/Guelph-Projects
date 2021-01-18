@@ -1,0 +1,12 @@
+Evan Hedges 0898140
+CIS 3190 W19 Legacy
+
+Compile: cobc -x -free -Wall primes#.cob where # is 1,2 or 3.
+
+Limitations:
+
+Haven't tested with invalid input
+
+Misc:
+
+The input hardcode file is primes.dat. The output is primes1Sol.dat or primes2Sol.dat for task 1 and 2 respectively. 

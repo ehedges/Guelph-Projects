@@ -1,0 +1,27 @@
+
+Source file: L2_5.X68
+Assembled on: 15-10-06 at: 18:16:58
+          by: X68K PC-2.2 Copyright (c) University of Teesside 1989,96
+Defaults: ORG $0/FORMAT/OPT A,BRL,CEX,CL,FRL,MC,MD,NOMEX,NOPCO
+
+    1                        *-----------------------------------------------------------
+    2                        * Title      :
+    3                        * Written by :
+    4                        * Date       :
+    5                        * Description:
+    6                        *-----------------------------------------------------------
+    7  00008000                        ORG       $8000
+    8  00008000 343C0009     PROGRAM:  MOVE.W    #9,D2
+    9  00008004 163C00FE               MOVE.B    #-2,D3
+   10  00008008 C5C2                   MULS      D2,D2
+   11  0000800A 4883                   EXT.W     D3
+   12  0000800C 85C3                   DIVS      D3,D2
+   13  0000800E 4281                   CLR.L     D1
+   14  00008010 3202                   MOVE.W    D2,D1
+   15  00008012 2002                   MOVE.L    D2,D0
+   16  00008014 4240                   CLR.W     D0
+   17  00008016 4840                   SWAP      D0
+   18  00008018 4E4E                   TRAP      #14
+   19           00008000               END       PROGRAM
+
+Lines: 19, Errors: 0, Warnings: 0.

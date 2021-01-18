@@ -1,0 +1,30 @@
+    Name : Evan Hedges 
+	ID: 0898140
+	Date: November 28th
+	Assignment: 4
+
+Compile:
+
+Navigate to the location of the folder type "make" to compile . 
+
+Running the program:
+
+Type ./avltree EXPRESSION to use the tree. 
+
+Limitations: 
+
+Sometimes after doing another option, intializing again may open the same file, and cause an infinite loop or crash. 
+The file takes along time to upload (like a minute or 2 for data.txt). 
+Lead nodes heights is zero. There is no error checking preventing anytype of file being uploaded, but it will prevent non-existant files from being uploaded.
+
+Tree:
+
+1. Initalize: Works but takes a while.
+2. Find: Works
+3. Insert: Works
+4. Remove: Does not work
+5. Check height/size: Works, but the height maybe alittle off.
+6. Find Frequency: Works
+7. Exit: Works
+
+Misc: Code is messy and long. Used kukuruku.co/hub/cpp/avl-trees as reference.

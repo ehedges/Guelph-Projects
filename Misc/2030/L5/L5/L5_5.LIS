@@ -1,0 +1,31 @@
+
+Source file: L5_5.X68
+Assembled on: 15-10-20 at: 20:24:22
+          by: X68K PC-2.2 Copyright (c) University of Teesside 1989,96
+Defaults: ORG $0/FORMAT/OPT A,BRL,CEX,CL,FRL,MC,MD,NOMEX,NOPCO
+
+    1                        *-----------------------------------------------------------
+    2                        * Title      :Lab 5 program
+    3                        * Written by :Evan Hedges
+    4                        * Date       :October 20th
+    5                        * Description:Lab assignment
+    6                        *-----------------------------------------------------------
+    7  00008000                        ORG       $8000
+    8  00008000              START:              
+    9                        
+   10  00008000 103900009000           MOVE.B    X,D0
+   11  00008006 123900009001           MOVE.B    X+1,D1
+   12  0000800C C2FC0003               MULU      #3,D1
+   13  00008010 C0FC0002               MULU      #2,D0
+   14  00008014 D001                   ADD.B     D1,D0
+   15  00008016 13C000009002           MOVE.B    D0,X+2
+   16                        
+   17  0000801C 4E4E                   TRAP      #14
+   18                            
+   19  00009000                        ORG       $9000
+   20  00009000 01           X:        DC.B      1
+   21  00009001 01                     DC.B      1
+   22  00009002 00000001               DS.B      1
+   23           00008000               END       START
+
+Lines: 23, Errors: 0, Warnings: 0.

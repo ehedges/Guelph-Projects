@@ -1,0 +1,22 @@
+
+Source file: L5_1.X68
+Assembled on: 15-10-20 at: 17:17:01
+          by: X68K PC-2.2 Copyright (c) University of Teesside 1989,96
+Defaults: ORG $0/FORMAT/OPT A,BRL,CEX,CL,FRL,MC,MD,NOMEX,NOPCO
+
+    1                        * L5_1.x68: Program given in class
+    2                        
+    3  00008000                        ORG       $8000                 ;;program starts at $8000
+    4  00008000 103900009000 START:    MOVE.B    VALUE1,D0             ;;load first byte from $9000
+    5  00008006 123900009001           MOVE.B    VALUE2,D1             ;;load second byte from $9001
+    6  0000800C D200                   ADD.B     D0,D1                 ;;sum bytes
+    7  0000800E 13C100009002           MOVE.B    D1,RESULT             ;;store sum at $9002
+    8  00008014 4E4E                   TRAP      #14                   ;;return to MON68K
+    9                        
+   10  00009000                        ORG       $9000                 ;;data starts at $9000 
+   11  00009000 0B           VALUE1:   DC.B      11                    ;;initialize RAM with 11
+   12  00009001 16           VALUE2:   DC.B      22                    ;;initialize RAM with 22
+   13  00009002 00000001     RESULT:   DS.B      1                     ;;reserve one byte of RAM
+   14           00008000               END       START
+
+Lines: 14, Errors: 0, Warnings: 0.

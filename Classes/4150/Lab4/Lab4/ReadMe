@@ -1,0 +1,9 @@
+Evan Hedges 0898140
+
+Question 1:
+
+tes_subtractNumber() does not run because it is miss spelled. Pytest only looks for prefix of test_
+
+Question 2:
+
+If you changed the name of file, pytest cannot find the file. It automatically looks for test_ to run the files. 

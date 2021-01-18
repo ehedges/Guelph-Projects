@@ -1,0 +1,22 @@
+Evan Hedges, 0898140
+CIS 2750, W18
+Denis Nikitenko
+
+Compile: Type make or make all. I used make test to create executable test to test.
+
+Limitations:
+
+createGEDCOM has minimal error checking. CONT or CONC is not looked for.
+
+printGEDCOM works.
+
+delete GEDCOM, has memory leaks, may segfault.
+
+printError, works.
+
+findperson, untested, no compare is provided.
+
+getDescendants(). Unused.
+
+Misc:
+Used Denis's linked list provided. No changes were made to it.

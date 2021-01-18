@@ -1,0 +1,35 @@
+V "GNAT Lib v6"
+A -gnatwa
+A -Wall
+P ZX
+
+RN
+RV SPARK_05
+
+U integer_stack%b	integer_stack.adb	2fc3c9a0 NE OO PK IL
+
+U integer_stack%s	integer_stack.ads	fd4a232c EE NE OO PK IL
+
+D integer_stack.ads	20190218175045 fd4a232c integer_stack%s
+D integer_stack.adb	20190218175314 d289ea8c integer_stack%b
+D system.ads		20151123113124 6326c08a system%s
+X 1 integer_stack.ads
+1K9*integer_stack 17l5 17e18 2|1b14 55l5 55t18
+3A14*values(integer)<integer> 7r20
+4R14*stack 9e19 11r49 12r52 13r38 14r33 15r43 2|3r48 14r49 26r34 33r29 48r39
+7a13*item{3A14} 2|8m15 19r21 42r23
+8i13*top{natural} 2|5r15 7m15 7r25 8r23 17r15 19r29 20m16 20r26 29r19 36r15
+. 42r31 51m12
+11U19*push 11>24 11=37 2|3b15 12l9 12t13
+11i24 x{integer} 2|3b20 8r31
+11r37 st{4R14} 2|3b36 5r12 7m12 7r22 8m12 8r20
+12U19*pop 12<23 12=40 2|14b15 24l9 24t12
+12i23 x{integer} 2|14b20 19m13
+12r40 st{4R14} 2|14b37 17r12 19r18 19r26 20m13 20r23
+13V18*stack_is_empty{boolean} 13>34 2|26b14 31l9 31t23
+13r34 st{4R14} 2|26b30 29r16
+14V18*stack_top{integer} 14>29 2|33b14 46l9 46t18
+14r29 st{4R14} 2|33b25 36r12 42r20 42r28
+15U19*reset_stack 15=31 2|48b15 53l9 53t20
+15r31 st{4R14} 2|48b27 51m9
+

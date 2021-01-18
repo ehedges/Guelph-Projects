@@ -1,0 +1,12 @@
+Evan Hedges 0898140
+CIS 2750 F18
+
+Everything should be implemented.No extra libraries so npm install should work. Tested on the school servers.
+
+Limitations:
+
+For validation, parameters may return okay if it is null.
+
+Misc:
+
+All functions should be implemented and working. 

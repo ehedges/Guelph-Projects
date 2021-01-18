@@ -1,0 +1,4 @@
+This was programmed on a Raspberry Pi and has not been tested on the SOCS computers.
+
+The linked list version cannot have files inserted at position 0, nor does the empty list work properly.
+In the folders replace I have the program which I used to test each of the programs.

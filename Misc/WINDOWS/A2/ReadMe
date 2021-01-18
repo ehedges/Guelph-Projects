@@ -1,0 +1,11 @@
+Evan Hedges, 0898140
+3090: Parrallel Programing
+
+Compile: type make
+
+Executing: type mpiexec ./a2 -n <#>. <#> represents a number.
+
+Limitations: Number of threads must be equal to the number of unique letters. 
+If it is too small, then it may not work i.e "the hat" does not work but "the cat" works as well as "the cake". 
+Some threads find multiple ways that answer the same. Does not always find the word, or may only find alternatives. 
+ 

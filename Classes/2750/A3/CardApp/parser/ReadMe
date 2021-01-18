@@ -1,0 +1,12 @@
+Evan Hedges 0898140
+CIS 2750 F18
+
+Compile: Type make or make all. For Dynaic Library, compile with VCARDDynamic.
+
+Limitations:
+
+For validation, parameters may return okay if it is null.
+
+Misc:
+
+All functions should be implemented and working. 
